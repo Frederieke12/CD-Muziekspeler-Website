@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Harry Styles Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Harry Styles</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#browse">Browse</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section">
+            <div class="hero">
+                <h1>Harry Styles</h1>
+                <p>Music Collection</p>
+            </div>
+            <div class="album-grid">
+                <!-- Albums will be populated by JS -->
+            </div>
+            <div class="playlists-overview">
+                <h2>Playlists</h2>
+                <div class="playlist-grid">
+                    <!-- Playlists will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="browse-section" class="hidden">
+            <h2>Browse Albums</h2>
+            <input type="text" id="browse-search-input" placeholder="Search albums...">
+            <div class="album-grid">
+                <!-- Albums will be populated by JS -->
+            </div>
+        </section>
+
+        <section id="library-section" class="hidden">
+            <h2>Your Library</h2>
+            <div class="playlist-grid">
+                <!-- Playlists will be populated by JS -->
+            </div>
+        </section>
+
+        <section id="search-section" class="hidden">
+            <h2>Search</h2>
+            <input type="text" id="search-input" placeholder="Search for songs, albums, or artists...">
+            <div id="search-results">
+                <!-- Search results will be populated by JS -->
+            </div>
+        </section>
+
+        <section id="album-view" class="hidden">
+            <div class="album-header">
+                <img src="" alt="Album Cover">
+                <div class="album-info">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <ul id="album-tracklist">
+                <!-- Tracks will be populated by JS -->
+            </ul>
+        </section>
+
+        <section id="playlist-view" class="hidden">
+            <h2></h2>
+            <ul id="playlist-tracklist">
+                <!-- Tracks will be populated by JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="player-bar">
+        <div class="now-playing">
+            <img id="current-track-cover" src="" alt="Track Cover">
+            <div class="track-info">
+                <span id="current-track-title">-</span>
+                <span id="current-track-artist">-</span>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="shuffle">🔀</button>
+            <button id="prev">⏮️</button>
+            <button id="play-pause">▶️</button>
+            <button id="next">⏭️</button>
+            <button id="repeat">🔁</button>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <span id="duration">0:00</span>
+        </div>
+        <div class="volume-control">
+            <button id="volume-icon">🔊</button>
+            <input type="range" id="volume-bar" min="0" max="100" value="50">
+        </div>
+    </footer>
+
+    <div id="youtube-player" style="display: none;"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
