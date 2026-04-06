@@ -68,12 +68,10 @@ header a {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
-    display: block;
+    display: flex;
     padding: 0.5rem 0;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     min-height: 44px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -167,7 +165,6 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     width: 100%;
     max-width: 200px;
 }
@@ -221,7 +218,6 @@ main {
     transition: background-color 0.3s ease;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     min-height: 50px;
     display: flex;
     align-items: center;
@@ -307,7 +303,6 @@ main {
     min-height: 44px;
     min-width: 44px;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
 }
 
 #new-playlist:hover {
@@ -336,8 +331,8 @@ main {
     color: #E0E0E0;
     font-size: 1rem;
     display: block;
-    -webkit-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
 }
 
 #search-results {
@@ -386,7 +381,6 @@ main {
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-bottom: 0.5rem;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     min-height: 44px;
 }
 
@@ -439,7 +433,6 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     min-height: 44px;
 }
 
@@ -465,7 +458,6 @@ main {
     min-height: 44px;
     min-width: 44px;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
 }
 
 #add-song-to-playlist:hover {
@@ -560,6 +552,7 @@ main {
 
 #progress-bar {
     flex: 1;
+    appearance: none;
     -webkit-appearance: none;
     background: #535353;
     height: 4px;
@@ -595,6 +588,7 @@ main {
 
 .volume-control input {
     flex: 1;
+    appearance: none;
     -webkit-appearance: none;
     background: #535353;
     height: 4px;
@@ -1043,5 +1037,4 @@ main {
     .logo {
         font-size: 1rem;
     }
-}
 }
